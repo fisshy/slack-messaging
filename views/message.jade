@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/") Start
+  form(class="pure-form pure-form-stacked" action="/message" method="POST")
+    fieldset
+      textarea(name="message", class="text-message" placeholder="Message")
+      textarea(name="answers", class="text-message" placeholder="Answers")
+
+      button(type="submit" class="pure-button pure-button-primary") Send it
+
+
